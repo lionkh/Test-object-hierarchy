@@ -16,11 +16,11 @@ class ObjectList extends Component {
         return items.map(item => {
             return <ul>
                 <li>{ item.name }</li>
-                { item.children.length ? <ul>
-                    {
-                        this.mapData(item.children)
-                    }
-                </ul> : null}
+                { item.children.length ?
+
+                    this.mapData(item.children)
+
+                    : null}
             </ul>
         })
     }
